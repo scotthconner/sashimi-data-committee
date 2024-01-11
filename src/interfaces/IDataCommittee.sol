@@ -76,5 +76,5 @@ interface IDataCommittee {
 	 * and authenticating deals as a client. A data committee
 	 * must handle all of these three cases properly.
 	 */
-	function handle_filecoin_method(uint64 method, uint64, bytes memory params) public returns (uint32, uint64, bytes memory);
+	function handle_filecoin_method(uint64 method, uint64, bytes memory params) external returns (uint32, uint64, bytes memory);
 }
